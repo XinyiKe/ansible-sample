@@ -1,6 +1,7 @@
 ---
-- name: Get Azure ad sp info
+- name: Get Azure Resources 
   hosts: localhost
   connection: local
   tasks:
-    - azure.azcollection.azure_rm_resourcegroup_info:
+    - name: Get facts for one resource group
+      azure.azcollection.azure_rm_resourcegroup_info:
