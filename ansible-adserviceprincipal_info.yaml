@@ -5,3 +5,4 @@
   tasks:
   - name: Get facts for one resource group
     azure.azcollection.azure_rm_resourcegroup_info:
+      name: "{{ myResourceGroup }}"
